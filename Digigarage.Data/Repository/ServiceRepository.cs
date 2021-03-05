@@ -49,7 +49,7 @@ namespace Digigarage.Data.Repository
         public IEnumerable<StautsOfBookingViewModel> GetAllServiceStatus()
         {
             IEnumerable<StautsOfBookingViewModel> ServicesStatusEntities =
-                Mapper.Map<IEnumerable<StautsOfBookingViewModel>>(_dbContext.StautsOfBookings);
+                Mapper.Map<IEnumerable<StautsOfBookingViewModel>>(_dbContext.StautsOfBookings.Where(a => a.Id == 2));
             return ServicesStatusEntities;
         }
 
