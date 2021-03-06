@@ -28,8 +28,8 @@ namespace Digigarage.BusinessEntities
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         public Nullable<System.DateTime> RegistraionDate { get; set; }
         [Required]
-        [MinLength(17, ErrorMessage = "Phone no must be greater than 17 digit")]
-        [MaxLength(17, ErrorMessage = "Phone no must be less than 17 digit")]
+        [MinLength(17, ErrorMessage = "Chassis Number is  greater than 17 digit")]
+        [MaxLength(17, ErrorMessage = "Chassis Number is less than 17 digit")]
         [DisplayName("Chassis Number")]
         public string ChassiNo { get; set; }
         [DisplayName("Engine Number")]
